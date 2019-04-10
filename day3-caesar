@@ -1,0 +1,9 @@
+# -*- coding:utf-8 -*
+import urllib
+
+url = 'https://jenkins.io/sites/default/files/jenkins_favicon.ico'
+res = urllib.urlopen(url).read()
+path = "/root/python_study/day3/jks.ico"
+f = open(path, "wb")
+f.write(res)
+f.close()
